@@ -107,7 +107,7 @@ class Crawler():
 
     def get_data(self, year, month, day):
         date_str = '{0}/{1:02d}/{2:02d}'.format(year - 1911, month, day)
-        print 'Crawling {}'.format(date_str)
+        print ('Crawling {}'.format(date_str))
         self._get_tse_data(date_str)
         self._get_otc_data(date_str)
 
